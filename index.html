@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <title>TODO APP</title>
+</head>
+
+<body>
+    <img src="./images/bg.svg" alt="" id="bg-curve">
+    
+    <div class="wrapper">
+
+        <header>
+            <h1>Listify</h1>
+
+            <div class="nav">
+                <span id="open-menu">
+                    <i class="fas fa-bars fa-2x"></i>
+                </span>
+
+                <nav id="mobile-nav">                
+                    <span id="close-menu">
+                        <i class="fas fa-times fa-2x"></i>
+                    </span>
+                    
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <!-- END UL -->
+                </nav>
+                <!-- END NAV -->
+            </div>
+            
+        </header>
+        <!-- END HEADER -->
+
+        <main>
+            <div class="add-item">
+                <input type="text" name="add-item" id="add-item" placeholder="Add item" min="1" max="28">
+                
+                <span id="add-item-icon">
+                    <i class="fas fa-plus add"></i>
+                </span>
+
+            </div>
+            <!-- END ADD-ITEM -->
+
+            <div class="empty-list-message">
+                <div id="no-data">
+                    <img src="./images/undraw_No_data_re_kwbl.svg" alt="" class="no-data-image">
+                    <h1>Feels lonely here</h1>
+                    <p>Try adding something To do</p>
+                </div>
+            </div>
+
+            <div class="todo-items">
+
+                
+
+            </div>
+            <!-- END TODO-ITEMS -->
+        </main>
+        <!-- END MAIN -->
+    </div>
+    <!-- END WRAPPER -->
+</body>
+
+<script src="script.js"></script>
+</html>
