@@ -138,11 +138,6 @@ main {
 	justify-content: space-around;
 }
 
-.top {
-	display: flex;
-	justify-content: end;
-}
-
 .checked {
 	display: none;
 	cursor: pointer;
@@ -158,6 +153,7 @@ main {
 	font-size: 25px;
 	color: white;
 	cursor: pointer;
+	float: right;
 }
 
 .delete {
