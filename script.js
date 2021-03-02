@@ -30,19 +30,18 @@ function createObject() {
 	const title = document.getElementById("add-item").value;
 	Todo.title = title;
 
-	todos.push(Todo);
-
-	renderTodos();
+	//CHECKING IF THE TODO TITLE FIELD IS EMPTY
+	if (!title == "") {
+		todos.push(Todo);
+		renderTodos();
+	} else {
+		alert("Todo cannot be empty");
+	}
 }
 
 function renderTodos() {
 	//CHECKING FOR A VALID TODO INPUT
 	const title = document.getElementById("add-item").value;
-
-	if (title == "") {
-		alert("Todo cannot be empty");
-		return;
-	}
 
 	isToDoEmpty();
 
